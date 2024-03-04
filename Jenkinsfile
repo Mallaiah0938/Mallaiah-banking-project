@@ -32,7 +32,7 @@ pipeline{
             steps{
                 sh 'docker build -t myimg .
         }
-    }
-}
+     }
+   }
 }
     

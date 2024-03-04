@@ -29,8 +29,13 @@ pipeline{
             }
         }
         stage('run dockerfile'){
+          steps{
+               sh 'docker build -t myimg .'
+           }
+         }
+        stage('port expose'){
             steps{
-                sh 'docker build' -t myimg .
+                sh 'docker run -dt -p 8091:8091 --name c000 myimg'
             }
          }
        }

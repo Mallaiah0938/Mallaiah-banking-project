@@ -27,5 +27,8 @@ pipeline{
             steps{
                 sh 'mvn package'
             }
-        }   
+        } 
+    }
+}
+
     

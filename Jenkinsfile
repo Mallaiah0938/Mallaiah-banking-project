@@ -31,8 +31,8 @@ pipeline{
         stage('run dockerfile'){
             steps{
                 sh 'docker build -t myimg .
-        }
-     }
-   }
-}
+            }
+         }
+       }
+    }
     
